@@ -24,6 +24,8 @@ def medication(jsondict):
             jsondict[i].update(medijson) #write new input into existing json
         else:
             print ("The diagnosis is not exist in database")
+            medijson = {'Possible Medication':'No Data Found'}
+            jsondict[i].update(medijson) #write new input into existing json
     
     return jsondict
 
